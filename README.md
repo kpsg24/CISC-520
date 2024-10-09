@@ -1,7 +1,7 @@
 # CISC 520 Final Project
 ## Files
-### Final Project.ipynb: Contain entire code. Include data clean, fine tuned with LLM and application design.
-### Final Project App.ipynb : Only contain the application design coding.
+### Final Project - Full.ipynb: Contain entire code. Include data clean, fine tuned with LLM and application design.
+### Final Project - App ONLY : Only contain the application design coding.
 ### Sales_Shipment_Data.csv : Order and shipment detail dataset.
 ## Folders
 ### fine-tuned-model: Contain the save fine tuned model using microsoft/DialoGPT-small.
