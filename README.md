@@ -1,1 +1,1 @@
-# CS-assistant
+# CISC 520
