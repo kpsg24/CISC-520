@@ -6,12 +6,12 @@ import torch
 from collections import deque
 
 # Load model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained("/Users/siyan/Desktop/CISC520-90-O-2024/fine-tuned-model")
-model = AutoModelForCausalLM.from_pretrained("/Users/siyan/Desktop/CISC520-90-O-2024/fine-tuned-model")
+tokenizer = AutoTokenizer.from_pretrained("./fine-tuned-model")
+model = AutoModelForCausalLM.from_pretrained("./fine-tuned-model")
 tokenizer.pad_token = tokenizer.eos_token  # Set pad_token
 
 # Load the Sales Shipment Data CSV
-order_data = pd.read_csv("/Users/siyan/Desktop/CISC520-90-O-2024/Sales_Shipment_Data.csv")
+order_data = pd.read_csv("./Sales_Shipment_Data.csv")
 order_data['Order Number'] = order_data['Order Number'].astype(str).str.zfill(5)
 
 def generate_response(prompt, max_length=50):
