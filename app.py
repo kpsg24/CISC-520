@@ -155,9 +155,9 @@ if st.button("Send"):
             order_status, eta, shipping_status, customer_fname, order_number = get_order_details(order_number, tracking_number)
             
             if not order_status or not eta:
-                response = "I'm sorry, I couldn't find any details for the provided order number or tracking number. Please check and try again."
+                response = "I'm sorry, I couldn't find any details for the provided order number or tracking number. Please check and try again. Feel free to ask if you need further help or have any other questions."
             else:
-                response_template = "Hi,<CUSTOMER_FNAME>.Your order number <ORDER_NUMBER> is currently <ORDER_STATUS>. The estimated delivery date is <ETA>."
+                response_template = "Hi,<CUSTOMER_FNAME>.Your order number <ORDER_NUMBER> is currently <ORDER_STATUS>. The estimated delivery date is <ETA>. Is there anything else I can assist you with today? Feel free to ask if you need further help or have any other questions."
                 response = post_process_response(
                     response_template, 
                     order_number=order_number, 
